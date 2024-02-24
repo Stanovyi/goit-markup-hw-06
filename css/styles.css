@@ -1,3 +1,8 @@
+/* !DELETE */
+.hide {
+  display: none;
+}
+
 :root {
   --iris: #4d5ae5;
   --ocean: #404bbf;
@@ -52,6 +57,7 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 address {
@@ -89,12 +95,27 @@ button {
 
 .container {
   margin: 0 auto;
-  padding: 0 15px;
-  width: 1158px;
+  width: 100%;
+  padding: 0 16px;
+
+  /* --Desktop--
+  width: 1158px; */
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1158px) {
 }
 
 .section {
-  padding: 120px 0;
+  padding: 96px 0;
+}
+
+@media (min-width: 1158px) {
+  .section {
+    padding: 120px 0;
+  }
 }
 
 .button {
