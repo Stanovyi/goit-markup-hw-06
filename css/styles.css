@@ -695,18 +695,22 @@ Desk
 /* #endregion */
 
 /* #region Footer */
+
 .footer {
-  padding: 100px 0;
+  padding: 96px 0;
   background-color: var(--navy-blue);
 }
 
 .footer .container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  row-gap: 72px;
 }
 
 .footer-description {
-  margin-right: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-description-logo {
@@ -726,7 +730,9 @@ Desk
 }
 
 .footer-socials {
-  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-social-subtitle {
@@ -764,6 +770,12 @@ Desk
   fill: var(--cloud);
 }
 
+.footer-subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .footer-subscribe-subtitle {
   margin-bottom: 16px;
   font-weight: 500;
@@ -775,13 +787,14 @@ Desk
 
 .footer-form {
   display: flex;
-  flex-direction: row;
-  gap: 24px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-form-input {
+  margin-bottom: 16px;
   padding: 8px 16px;
-  border: 1px solid var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   width: 264px;
   height: 40px;
@@ -799,7 +812,7 @@ Desk
   font-size: 12px;
   line-height: 200%;
   letter-spacing: 0.04em;
-  color: var(--white);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-form-button {
@@ -816,6 +829,8 @@ Desk
   letter-spacing: 0.04em;
   color: var(--white);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  padding: 8px 24px;
 }
 
 .footer-button-image {
@@ -832,6 +847,63 @@ Desk
 
 .form-button-image {
   fill: var(--white);
+}
+
+@media (min-width: 768px) {
+  .footer .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .footer-description {
+    align-items: flex-start;
+    margin-right: 24px;
+  }
+
+  .footer-form {
+    column-gap: 24px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .footer-socials {
+    align-items: flex-start;
+    margin-right: 80px;
+  }
+
+  .footer-subscribe {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer .container {
+    flex-wrap: nowrap;
+  }
+
+  .footer-description {
+    margin-right: 120px;
+  }
+
+  .footer-form {
+    column-gap: 24px;
+  }
+
+  .footer-socials {
+    margin-right: 80px;
+  }
+
+  .footer-form-input {
+    border: 1px solid var(--white);
+  }
+
+  .footer-form-input::placeholder {
+    color: var(--white);
+  }
 }
 /* #endregion */
 
