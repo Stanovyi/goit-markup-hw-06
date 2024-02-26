@@ -143,12 +143,13 @@ button {
 
 /* #region Header */
 .header {
-  /* position: sticky;
+  position: sticky;
   top: 0;
-  z-index: 10000; */
+  z-index: 10000;
   border-bottom: 1px solid var(--cornflower);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  background-color: var(--white);
 }
 
 .header .container {
@@ -213,10 +214,6 @@ button {
 
   .header-contacts-list {
     display: flex;
-    gap: 40px;
-  }
-
-  .header-contacts-list {
     flex-direction: column;
     gap: 12px;
   }
@@ -416,7 +413,6 @@ button {
   .our-features-list {
     flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 72px;
     column-gap: 24px;
   }
 
@@ -428,7 +424,6 @@ button {
 @media (min-width: 1158px) {
   .our-features-list {
     flex-direction: row;
-    gap: 24px;
   }
 
   .our-features-item {
@@ -491,7 +486,6 @@ button {
 
 @media (min-width: 768px) {
   .our-team-list {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -505,11 +499,6 @@ button {
 }
 
 @media (min-width: 1158px) {
-  .our-team-list {
-    display: flex;
-    gap: 24px;
-  }
-
   .our-team-item {
     width: calc((100% - 24px * 3) / 4);
   }
@@ -623,7 +612,6 @@ button {
 @media (min-width: 1158px) {
   .our-portfolio-list {
     row-gap: 48px;
-    column-gap: 24px;
   }
 
   .our-portfolio-item {
@@ -879,14 +867,6 @@ button {
 
   .footer-description {
     margin-right: 120px;
-  }
-
-  .footer-form {
-    column-gap: 24px;
-  }
-
-  .footer-socials {
-    margin-right: 80px;
   }
 
   .footer-form-input {
