@@ -307,7 +307,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url('../images/hero/hero-background-mobile.jpg');
+    url('../images/hero/hero-background-mobile@1x.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -343,7 +343,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url('../images/hero/hero-background-tablet.jpg');
+      url('../images/hero/hero-background-tablet@1x.jpg');
   }
 
   .hero-title {
@@ -372,7 +372,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url('../images/hero/hero-background.jpg');
+      url('../images/hero/hero-background@1x.jpg');
   }
 
   .hero-title {
