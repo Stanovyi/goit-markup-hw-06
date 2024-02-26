@@ -330,6 +330,7 @@ button {
 
 .hero-title {
   margin-bottom: 72px;
+  max-width: 216px;
   font-weight: 700;
   font-size: 36px;
   line-height: 111%;
@@ -352,6 +353,7 @@ button {
 
   .hero-title {
     margin-bottom: 36px;
+    max-width: 496px;
     font-size: 56px;
     line-height: 107%;
   }
@@ -379,7 +381,6 @@ button {
   }
 
   .hero-title {
-    max-width: 496px;
     margin-bottom: 48px;
   }
 }
@@ -883,7 +884,7 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 9999;
+  z-index: 10001;
   background-color: rgba(46, 47, 66, 0.4);
   opacity: 0;
   visibility: hidden;
