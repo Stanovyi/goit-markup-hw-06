@@ -1070,7 +1070,7 @@ button {
   justify-content: center;
   align-items: center;
   margin-right: 8px;
-  width: 16px;
+  min-width: 16px;
   height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -1091,6 +1091,7 @@ button {
 }
 
 .form-text {
+  display: flex;
   font-weight: 400;
   font-size: 12px;
   line-height: 117%;
