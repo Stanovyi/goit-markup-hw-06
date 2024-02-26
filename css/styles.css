@@ -221,14 +221,6 @@ button {
     letter-spacing: 0.04em;
     color: var(--slate);
   }
-
-  .header-contacts-item:first-child .header-contacts-link {
-    padding-top: 16px;
-  }
-
-  .header-contacts-item:last-child .header-contacts-link {
-    padding-bottom: 16px;
-  }
 }
 
 @media (min-width: 1158px) {
