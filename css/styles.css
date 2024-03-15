@@ -32,6 +32,10 @@ ul {
 /* #endregion */
 
 /* #region Base */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 150%;
